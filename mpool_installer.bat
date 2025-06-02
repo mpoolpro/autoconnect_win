@@ -39,7 +39,7 @@ powershell -Command "Expand-Archive -Path 'xmrig.zip' -DestinationPath 'C:\Xmrig
 echo [*] Creating batch script...
 (
     echo @echo off
-    echo start "" "C:\Xmrig\xmrig-6.17.0\xmrig.exe" -o pool.mpool.pro:4242 -u %wallet% -p monero -a rx/0 -k --tls
+    echo start "" "C:\Xmrig\xmrig-6.17.0\xmrig.exe" -o world.mpool.pro:4242 -u %wallet% -p monero -a rx/0 -k --tls
     echo pause
 ) > "%~dp0start_mining.bat"
 
